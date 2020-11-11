@@ -1,0 +1,123 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/Sharmi/Documents/Xamarin_Forms___Azure_Notification_Hub/NotificationHubSample/NotificationHubSample.Android/NotificationHubSample.Android.csproj": {}
+  },
+  "projects": {
+    "/Users/Sharmi/Documents/Xamarin_Forms___Azure_Notification_Hub/NotificationHubSample/NotificationHubSample.Android/NotificationHubSample.Android.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/Sharmi/Documents/Xamarin_Forms___Azure_Notification_Hub/NotificationHubSample/NotificationHubSample.Android/NotificationHubSample.Android.csproj",
+        "projectName": "NotificationHubSample.Android",
+        "projectPath": "/Users/Sharmi/Documents/Xamarin_Forms___Azure_Notification_Hub/NotificationHubSample/NotificationHubSample.Android/NotificationHubSample.Android.csproj",
+        "packagesPath": "/Users/Sharmi/.nuget/packages/",
+        "outputPath": "/Users/Sharmi/Documents/Xamarin_Forms___Azure_Notification_Hub/NotificationHubSample/NotificationHubSample.Android/obj/",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "/Users/Sharmi/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid90"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid90": {
+            "projectReferences": {
+              "/Users/Sharmi/Documents/Xamarin_Forms___Azure_Notification_Hub/NotificationHubSample/NotificationHubSample/NotificationHubSample.csproj": {
+                "projectPath": "/Users/Sharmi/Documents/Xamarin_Forms___Azure_Notification_Hub/NotificationHubSample/NotificationHubSample/NotificationHubSample.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid90": {
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            },
+            "Xamarin.Azure.NotificationHubs.Android": {
+              "target": "Package",
+              "version": "[0.6.0, )"
+            },
+            "Xamarin.Firebase.Messaging": {
+              "target": "Package",
+              "version": "[71.1740.0, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.8.0.1269, )"
+            },
+            "Xamarin.GooglePlayServices.Base": {
+              "target": "Package",
+              "version": "[71.1610.0, )"
+            }
+          }
+        }
+      }
+    },
+    "/Users/Sharmi/Documents/Xamarin_Forms___Azure_Notification_Hub/NotificationHubSample/NotificationHubSample/NotificationHubSample.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/Sharmi/Documents/Xamarin_Forms___Azure_Notification_Hub/NotificationHubSample/NotificationHubSample/NotificationHubSample.csproj",
+        "projectName": "NotificationHubSample",
+        "projectPath": "/Users/Sharmi/Documents/Xamarin_Forms___Azure_Notification_Hub/NotificationHubSample/NotificationHubSample/NotificationHubSample.csproj",
+        "packagesPath": "/Users/Sharmi/.nuget/packages/",
+        "outputPath": "/Users/Sharmi/Documents/Xamarin_Forms___Azure_Notification_Hub/NotificationHubSample/NotificationHubSample/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/Sharmi/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.8.0.1269, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
