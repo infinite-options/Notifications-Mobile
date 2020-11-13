@@ -15,7 +15,7 @@ androidsdkpath=/users/sharmi/library/android/sdk/
 androidndkpath=
 javasdkpath=/users/sharmi/library/developer/xamarin/jdk/microsoft_dist_openjdk_1.8.0.25/
 androidsequencepointsmode=none
-xamarinandroidversion=11.0.2-0
+xamarinandroidversion=11.1.0-17
 monosymbolarchive=false
 androiduselatestplatformsdk=false
 targetframeworkversion=v9.0
@@ -24,7 +24,7 @@ androidgeneratejnimarshalmethods=false
 os=unix
 androidincludedebugsymbols=true
 androidpackagenamingpolicy=lowercasecrc64
-_nugetassetstimestamp=637400970538623586
+_nugetassetstimestamp=637405976010417589
 typemapkind=strings-asm
 androidsupportedabis=arm64-v8a
 armeabi-v7a

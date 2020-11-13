@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "4uxjx77v+fTmdhYEafU+Xz26MMdP4zxIOhbKd95jKq407q+EnAmbSUrZGGhcvrxCNPh9UCgsiPy83wG+hQ+lWw==",
+  "dgSpecHash": "PbZ0WmGvj6FJoQoz+ovAtX+Wj9JsIdt105dIgQSPIKSFQpXPPSWIfb58mAYFz0V8wfxoRpFyup/c77hNbTbOMQ==",
   "success": true,
-  "projectFilePath": "/Users/Sharmi/Documents/Xamarin_Forms___Azure_Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/NotificationHubSample.iOS.csproj",
+  "projectFilePath": "C:\\Users\\bala2\\Documents\\Sharmi\\Notifications-Mobile\\NotificationHubSample\\NotificationHubSample.iOS\\NotificationHubSample.iOS.csproj",
   "expectedPackageFiles": [
-    "/Users/Sharmi/.nuget/packages/xamarin.azure.notificationhubs.ios/2.0.4/xamarin.azure.notificationhubs.ios.2.0.4.nupkg.sha512",
-    "/Users/Sharmi/.nuget/packages/xamarin.forms/4.8.0.1269/xamarin.forms.4.8.0.1269.nupkg.sha512"
+    "C:\\Users\\bala2\\.nuget\\packages\\xamarin.azure.notificationhubs.ios\\3.1.0\\xamarin.azure.notificationhubs.ios.3.1.0.nupkg.sha512",
+    "C:\\Users\\bala2\\.nuget\\packages\\xamarin.forms\\4.8.0.1269\\xamarin.forms.4.8.0.1269.nupkg.sha512"
   ],
   "logs": []
 }

@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "Xamarin.iOS,Version=v1.0": {
-      "Xamarin.Azure.NotificationHubs.iOS/2.0.4": {
+      "Xamarin.Azure.NotificationHubs.iOS/3.1.0": {
         "type": "package",
         "frameworkAssemblies": [
           "Xamarin.iOS"
@@ -150,7 +150,7 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win": {
-      "Xamarin.Azure.NotificationHubs.iOS/2.0.4": {
+      "Xamarin.Azure.NotificationHubs.iOS/3.1.0": {
         "type": "package",
         "frameworkAssemblies": [
           "Xamarin.iOS"
@@ -298,7 +298,7 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x64": {
-      "Xamarin.Azure.NotificationHubs.iOS/2.0.4": {
+      "Xamarin.Azure.NotificationHubs.iOS/3.1.0": {
         "type": "package",
         "frameworkAssemblies": [
           "Xamarin.iOS"
@@ -446,7 +446,7 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x86": {
-      "Xamarin.Azure.NotificationHubs.iOS/2.0.4": {
+      "Xamarin.Azure.NotificationHubs.iOS/3.1.0": {
         "type": "package",
         "frameworkAssemblies": [
           "Xamarin.iOS"
@@ -595,16 +595,17 @@
     }
   },
   "libraries": {
-    "Xamarin.Azure.NotificationHubs.iOS/2.0.4": {
-      "sha512": "t3B6c2POw9L5Y82e/OxZajnFfDndDfxhhPT/qfWcG6XWN0QBqzB04powvUN836bE++PMbP2kP+sy2QF339ibfw==",
+    "Xamarin.Azure.NotificationHubs.iOS/3.1.0": {
+      "sha512": "jshjLPhAnEop68YPUiKvI9VTzqyYycR2KaeQdkDXYfvtIa9kMpsiAgYxo4kGleqke+4S9EjyKfbXe8iWKH9t8A==",
       "type": "package",
-      "path": "xamarin.azure.notificationhubs.ios/2.0.4",
+      "path": "xamarin.azure.notificationhubs.ios/3.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "THIRD-PARTY-NOTICES.txt",
         "lib/xamarinios10/Xamarin.Azure.NotificationHubs.iOS.dll",
-        "xamarin.azure.notificationhubs.ios.2.0.4.nupkg.sha512",
+        "lib/xamarinmac20/Xamarin.Azure.NotificationHubs.iOS.dll",
+        "lib/xamarintvos10/Xamarin.Azure.NotificationHubs.iOS.dll",
+        "xamarin.azure.notificationhubs.ios.3.1.0.nupkg.sha512",
         "xamarin.azure.notificationhubs.ios.nuspec"
       ]
     },
@@ -931,37 +932,44 @@
   "projectFileDependencyGroups": {
     "Xamarin.iOS,Version=v1.0": [
       "NotificationHubSample >= 1.0.0",
-      "Xamarin.Azure.NotificationHubs.iOS >= 2.0.4",
+      "Xamarin.Azure.NotificationHubs.iOS >= 3.1.0",
       "Xamarin.Forms >= 4.8.0.1269"
     ]
   },
   "packageFolders": {
-    "/Users/Sharmi/.nuget/packages/": {}
+    "C:\\Users\\bala2\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Sharmi/Documents/Xamarin_Forms___Azure_Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/NotificationHubSample.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\bala2\\Documents\\Sharmi\\Notifications-Mobile\\NotificationHubSample\\NotificationHubSample.iOS\\NotificationHubSample.iOS.csproj",
       "projectName": "NotificationHubSample.iOS",
-      "projectPath": "/Users/Sharmi/Documents/Xamarin_Forms___Azure_Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/NotificationHubSample.iOS.csproj",
-      "packagesPath": "/Users/Sharmi/.nuget/packages/",
-      "outputPath": "/Users/Sharmi/Documents/Xamarin_Forms___Azure_Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/",
+      "projectPath": "C:\\Users\\bala2\\Documents\\Sharmi\\Notifications-Mobile\\NotificationHubSample\\NotificationHubSample.iOS\\NotificationHubSample.iOS.csproj",
+      "packagesPath": "C:\\Users\\bala2\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\bala2\\Documents\\Sharmi\\Notifications-Mobile\\NotificationHubSample\\NotificationHubSample.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "/Users/Sharmi/.config/NuGet/NuGet.Config"
+        "C:\\Users\\bala2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "/Users/Sharmi/Documents/Xamarin_Forms___Azure_Notification_Hub/NotificationHubSample/NotificationHubSample/NotificationHubSample.csproj": {
-              "projectPath": "/Users/Sharmi/Documents/Xamarin_Forms___Azure_Notification_Hub/NotificationHubSample/NotificationHubSample/NotificationHubSample.csproj"
+            "C:\\Users\\bala2\\Documents\\Sharmi\\Notifications-Mobile\\NotificationHubSample\\NotificationHubSample\\NotificationHubSample.csproj": {
+              "projectPath": "C:\\Users\\bala2\\Documents\\Sharmi\\Notifications-Mobile\\NotificationHubSample\\NotificationHubSample\\NotificationHubSample.csproj"
             }
           }
         }
@@ -972,7 +980,7 @@
         "dependencies": {
           "Xamarin.Azure.NotificationHubs.iOS": {
             "target": "Package",
-            "version": "[2.0.4, )"
+            "version": "[3.1.0, )"
           },
           "Xamarin.Forms": {
             "target": "Package",

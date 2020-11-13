@@ -10,7 +10,7 @@
         /// <summary>
         /// This is the name of your Azure Notification Hub, found in your Azure portal.
         /// </summary>
-        public static string NotificationHubName { get; set; } = "NotificationHubSample";
+        public static string NotificationHubName { get; set; } = "XamNotiPushApple";
 
         /// <summary>
         /// This is the "DefaultListenSharedAccessSignature" connection string, which is
@@ -19,7 +19,7 @@
         /// You should always use the ListenShared connection string. Do not use the
         /// FullShared connection string in a client application.
         /// </summary>
-        public static string ListenConnectionString { get; set; } = "Endpoint=sb://notificationhubsample-123.servicebus.windows.net/;SharedAccessKeyName=DefaultListenSharedAccessSignature;SharedAccessKey=TI7m9USEsyX34UWObFZNLKl4JktNggSXW/GK7MiVFpE=";
+        public static string ListenConnectionString { get; set; } = "Endpoint=sb://notificationhubsample-123.servicebus.windows.net/;SharedAccessKeyName=DefaultListenSharedAccessSignature;SharedAccessKey=Q+tkYc8oBBe/xrpquFsdigpqMLzY6WXgtZYO0UVnvow=";
 
         /// <summary>
         /// Tag used in log messages to easily filter the device log

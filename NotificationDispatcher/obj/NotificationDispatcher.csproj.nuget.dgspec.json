@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/Users/Sharmi/Documents/Xamarin_Forms___Azure_Notification_Hub/NotificationDispatcher/NotificationDispatcher.csproj": {}
+    "C:\\Users\\bala2\\Documents\\Sharmi\\Notifications-Mobile\\NotificationDispatcher\\NotificationDispatcher.csproj": {}
   },
   "projects": {
-    "/Users/Sharmi/Documents/Xamarin_Forms___Azure_Notification_Hub/NotificationDispatcher/NotificationDispatcher.csproj": {
+    "C:\\Users\\bala2\\Documents\\Sharmi\\Notifications-Mobile\\NotificationDispatcher\\NotificationDispatcher.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/Sharmi/Documents/Xamarin_Forms___Azure_Notification_Hub/NotificationDispatcher/NotificationDispatcher.csproj",
+        "projectUniqueName": "C:\\Users\\bala2\\Documents\\Sharmi\\Notifications-Mobile\\NotificationDispatcher\\NotificationDispatcher.csproj",
         "projectName": "NotificationDispatcher",
-        "projectPath": "/Users/Sharmi/Documents/Xamarin_Forms___Azure_Notification_Hub/NotificationDispatcher/NotificationDispatcher.csproj",
-        "packagesPath": "/Users/Sharmi/.nuget/packages/",
-        "outputPath": "/Users/Sharmi/Documents/Xamarin_Forms___Azure_Notification_Hub/NotificationDispatcher/obj/",
+        "projectPath": "C:\\Users\\bala2\\Documents\\Sharmi\\Notifications-Mobile\\NotificationDispatcher\\NotificationDispatcher.csproj",
+        "packagesPath": "C:\\Users\\bala2\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bala2\\Documents\\Sharmi\\Notifications-Mobile\\NotificationDispatcher\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "/Users/Sharmi/.config/NuGet/NuGet.Config"
+          "C:\\Users\\bala2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -59,7 +65,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

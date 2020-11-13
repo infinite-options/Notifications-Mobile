@@ -1,33 +1,39 @@
 {
   "format": 1,
   "restore": {
-    "/Users/Sharmi/Documents/Xamarin_Forms___Azure_Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/NotificationHubSample.iOS.csproj": {}
+    "C:\\Users\\bala2\\Documents\\Sharmi\\Notifications-Mobile\\NotificationHubSample\\NotificationHubSample.iOS\\NotificationHubSample.iOS.csproj": {}
   },
   "projects": {
-    "/Users/Sharmi/Documents/Xamarin_Forms___Azure_Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/NotificationHubSample.iOS.csproj": {
+    "C:\\Users\\bala2\\Documents\\Sharmi\\Notifications-Mobile\\NotificationHubSample\\NotificationHubSample.iOS\\NotificationHubSample.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/Sharmi/Documents/Xamarin_Forms___Azure_Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/NotificationHubSample.iOS.csproj",
+        "projectUniqueName": "C:\\Users\\bala2\\Documents\\Sharmi\\Notifications-Mobile\\NotificationHubSample\\NotificationHubSample.iOS\\NotificationHubSample.iOS.csproj",
         "projectName": "NotificationHubSample.iOS",
-        "projectPath": "/Users/Sharmi/Documents/Xamarin_Forms___Azure_Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/NotificationHubSample.iOS.csproj",
-        "packagesPath": "/Users/Sharmi/.nuget/packages/",
-        "outputPath": "/Users/Sharmi/Documents/Xamarin_Forms___Azure_Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/",
+        "projectPath": "C:\\Users\\bala2\\Documents\\Sharmi\\Notifications-Mobile\\NotificationHubSample\\NotificationHubSample.iOS\\NotificationHubSample.iOS.csproj",
+        "packagesPath": "C:\\Users\\bala2\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bala2\\Documents\\Sharmi\\Notifications-Mobile\\NotificationHubSample\\NotificationHubSample.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "/Users/Sharmi/.config/NuGet/NuGet.Config"
+          "C:\\Users\\bala2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "xamarinios10"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "/Users/Sharmi/Documents/Xamarin_Forms___Azure_Notification_Hub/NotificationHubSample/NotificationHubSample/NotificationHubSample.csproj": {
-                "projectPath": "/Users/Sharmi/Documents/Xamarin_Forms___Azure_Notification_Hub/NotificationHubSample/NotificationHubSample/NotificationHubSample.csproj"
+              "C:\\Users\\bala2\\Documents\\Sharmi\\Notifications-Mobile\\NotificationHubSample\\NotificationHubSample\\NotificationHubSample.csproj": {
+                "projectPath": "C:\\Users\\bala2\\Documents\\Sharmi\\Notifications-Mobile\\NotificationHubSample\\NotificationHubSample\\NotificationHubSample.csproj"
               }
             }
           }
@@ -38,7 +44,7 @@
           "dependencies": {
             "Xamarin.Azure.NotificationHubs.iOS": {
               "target": "Package",
-              "version": "[2.0.4, )"
+              "version": "[3.1.0, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
@@ -59,22 +65,28 @@
         }
       }
     },
-    "/Users/Sharmi/Documents/Xamarin_Forms___Azure_Notification_Hub/NotificationHubSample/NotificationHubSample/NotificationHubSample.csproj": {
+    "C:\\Users\\bala2\\Documents\\Sharmi\\Notifications-Mobile\\NotificationHubSample\\NotificationHubSample\\NotificationHubSample.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/Sharmi/Documents/Xamarin_Forms___Azure_Notification_Hub/NotificationHubSample/NotificationHubSample/NotificationHubSample.csproj",
+        "projectUniqueName": "C:\\Users\\bala2\\Documents\\Sharmi\\Notifications-Mobile\\NotificationHubSample\\NotificationHubSample\\NotificationHubSample.csproj",
         "projectName": "NotificationHubSample",
-        "projectPath": "/Users/Sharmi/Documents/Xamarin_Forms___Azure_Notification_Hub/NotificationHubSample/NotificationHubSample/NotificationHubSample.csproj",
-        "packagesPath": "/Users/Sharmi/.nuget/packages/",
-        "outputPath": "/Users/Sharmi/Documents/Xamarin_Forms___Azure_Notification_Hub/NotificationHubSample/NotificationHubSample/obj/",
+        "projectPath": "C:\\Users\\bala2\\Documents\\Sharmi\\Notifications-Mobile\\NotificationHubSample\\NotificationHubSample\\NotificationHubSample.csproj",
+        "packagesPath": "C:\\Users\\bala2\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bala2\\Documents\\Sharmi\\Notifications-Mobile\\NotificationHubSample\\NotificationHubSample\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "/Users/Sharmi/.config/NuGet/NuGet.Config"
+          "C:\\Users\\bala2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -114,7 +126,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

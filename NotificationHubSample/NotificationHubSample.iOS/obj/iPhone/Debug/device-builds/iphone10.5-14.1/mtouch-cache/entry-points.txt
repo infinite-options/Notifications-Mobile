@@ -1,0 +1,104 @@
+Function=SystemNative_ConvertErrorPlatformToPal
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_ConvertErrorPalToPlatform
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_StrErrorR
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_GetNonCryptographicallySecureRandomBytes
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_OpenDir
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_GetReadDirRBufferSize
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_ReadDirR
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_CloseDir
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_ReadLink
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_Stat2
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_LStat2
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_Symlink
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_CopyFile
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_GetEGid
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_GetEUid
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_Link
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_MkDir
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_Rename
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_Unlink
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/mscorlib.dll
+Function=xamarin_timezone_get_local_name
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/mscorlib.dll
+Function=xamarin_timezone_get_data
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/mscorlib.dll
+Function=xamarin_GetFolderPath
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/mscorlib.dll
+Function=xamarin_log
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/mscorlib.dll
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_find_protocol_wrapper_type
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_release_block_on_main_thread
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_get_block_descriptor
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_IntPtr_objc_msgSend_IntPtr
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_IntPtr_objc_msgSendSuper_IntPtr
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=UIApplicationMain
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=NetSecurityNative_ReleaseGssBuffer
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_DisplayMinorStatus
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_DisplayMajorStatus
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_ImportUserName
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_ImportPrincipalName
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_ReleaseName
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_InitiateCredSpNego
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_InitiateCredWithPassword
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_ReleaseCred
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_InitSecContext
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_DeleteSecContext
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/System.dll
+Function=xamarin_start_wwan
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/System.dll
+ObjectiveCClass=OBJC_CLASS_$_SBConnectionString
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/Xamarin.Azure.NotificationHubs.iOS.dll
+ObjectiveCClass=OBJC_CLASS_$_SBLocalStorage
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/Xamarin.Azure.NotificationHubs.iOS.dll
+ObjectiveCClass=OBJC_CLASS_$_SBNotificationHub
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/Xamarin.Azure.NotificationHubs.iOS.dll
+ObjectiveCClass=OBJC_CLASS_$_SBRegistration
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/Xamarin.Azure.NotificationHubs.iOS.dll
+ObjectiveCClass=OBJC_CLASS_$_SBTokenProvider
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/Xamarin.Azure.NotificationHubs.iOS.dll
+ObjectiveCClass=OBJC_CLASS_$_StoredRegistrationEntry
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/Xamarin.Azure.NotificationHubs.iOS.dll
+ObjectiveCClass=OBJC_CLASS_$_MSInstallation
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/Xamarin.Azure.NotificationHubs.iOS.dll
+ObjectiveCClass=OBJC_CLASS_$_MSInstallationTemplate
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/Xamarin.Azure.NotificationHubs.iOS.dll
+ObjectiveCClass=OBJC_CLASS_$_MSNotificationHub
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/Xamarin.Azure.NotificationHubs.iOS.dll
+ObjectiveCClass=OBJC_CLASS_$_MSNotificationHubMessage
+	/Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample.iOS/obj/iPhone/Debug/device-builds/iphone10.5-14.1/mtouch-cache/1-Link/Xamarin.Azure.NotificationHubs.iOS.dll
+Function=mono_pmip

@@ -14,12 +14,12 @@
         /// <summary>
         /// This is the name of your Azure Notification Hub, found in your Azure portal.
         /// </summary>
-        public static string NotificationHubName { get; set; } = "NotificationHubSample";
+        public static string NotificationHubName { get; set; } = "XamNotiPushApple";
 
         /// <summary>
         /// This is the "DefaultFullSharedAccessSignature" connection string, which is
         /// found in your Azure Notification Hub portal under "Access Policies".
         /// </summary>
-        public static string FullAccessConnectionString { get; set; } = "Endpoint=sb://notificationhubsample-123.servicebus.windows.net/;SharedAccessKeyName=DefaultFullSharedAccessSignature;SharedAccessKey=Nnspdn5CTpI5y/nkLuJ0T8qEBzoDsbRrbFJmJx9Aups=";
+        public static string FullAccessConnectionString { get; set; } = "Endpoint=sb://notificationhubsample-123.servicebus.windows.net/;SharedAccessKeyName=DefaultFullSharedAccessSignature;SharedAccessKey=x/S8cWJeEdXWq8zcBhwHHPfPcYYFOrdYbRn48wWMJMI=";
     }
 }
