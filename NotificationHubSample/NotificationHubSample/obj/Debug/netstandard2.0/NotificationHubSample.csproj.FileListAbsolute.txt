@@ -10,3 +10,15 @@
 /Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample/obj/Debug/netstandard2.0/XamlC.stamp
 /Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample/obj/Debug/netstandard2.0/NotificationHubSample.dll
 /Users/Sharmi/Desktop/cert/Notification_Hub/NotificationHubSample/NotificationHubSample/obj/Debug/netstandard2.0/NotificationHubSample.pdb
+/Users/pmarathay/code/Notifications-Mobile/NotificationHubSample/NotificationHubSample/bin/Debug/netstandard2.0/NotificationHubSample.deps.json
+/Users/pmarathay/code/Notifications-Mobile/NotificationHubSample/NotificationHubSample/bin/Debug/netstandard2.0/NotificationHubSample.dll
+/Users/pmarathay/code/Notifications-Mobile/NotificationHubSample/NotificationHubSample/bin/Debug/netstandard2.0/NotificationHubSample.pdb
+/Users/pmarathay/code/Notifications-Mobile/NotificationHubSample/NotificationHubSample/obj/Debug/netstandard2.0/NotificationHubSample.csprojAssemblyReference.cache
+/Users/pmarathay/code/Notifications-Mobile/NotificationHubSample/NotificationHubSample/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/pmarathay/code/Notifications-Mobile/NotificationHubSample/NotificationHubSample/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
+/Users/pmarathay/code/Notifications-Mobile/NotificationHubSample/NotificationHubSample/obj/Debug/netstandard2.0/NotificationHubSample.AssemblyInfoInputs.cache
+/Users/pmarathay/code/Notifications-Mobile/NotificationHubSample/NotificationHubSample/obj/Debug/netstandard2.0/NotificationHubSample.AssemblyInfo.cs
+/Users/pmarathay/code/Notifications-Mobile/NotificationHubSample/NotificationHubSample/obj/Debug/netstandard2.0/NotificationHubSample.csproj.CoreCompileInputs.cache
+/Users/pmarathay/code/Notifications-Mobile/NotificationHubSample/NotificationHubSample/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/pmarathay/code/Notifications-Mobile/NotificationHubSample/NotificationHubSample/obj/Debug/netstandard2.0/NotificationHubSample.dll
+/Users/pmarathay/code/Notifications-Mobile/NotificationHubSample/NotificationHubSample/obj/Debug/netstandard2.0/NotificationHubSample.pdb

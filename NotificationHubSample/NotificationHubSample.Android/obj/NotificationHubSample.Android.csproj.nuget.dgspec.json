@@ -1,39 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bala2\\Documents\\Sharmi\\Notifications-Mobile\\NotificationHubSample\\NotificationHubSample.Android\\NotificationHubSample.Android.csproj": {}
+    "/Users/pmarathay/code/Notifications-Mobile/NotificationHubSample/NotificationHubSample.Android/NotificationHubSample.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bala2\\Documents\\Sharmi\\Notifications-Mobile\\NotificationHubSample\\NotificationHubSample.Android\\NotificationHubSample.Android.csproj": {
+    "/Users/pmarathay/code/Notifications-Mobile/NotificationHubSample/NotificationHubSample.Android/NotificationHubSample.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bala2\\Documents\\Sharmi\\Notifications-Mobile\\NotificationHubSample\\NotificationHubSample.Android\\NotificationHubSample.Android.csproj",
+        "projectUniqueName": "/Users/pmarathay/code/Notifications-Mobile/NotificationHubSample/NotificationHubSample.Android/NotificationHubSample.Android.csproj",
         "projectName": "NotificationHubSample.Android",
-        "projectPath": "C:\\Users\\bala2\\Documents\\Sharmi\\Notifications-Mobile\\NotificationHubSample\\NotificationHubSample.Android\\NotificationHubSample.Android.csproj",
-        "packagesPath": "C:\\Users\\bala2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bala2\\Documents\\Sharmi\\Notifications-Mobile\\NotificationHubSample\\NotificationHubSample.Android\\obj\\",
+        "projectPath": "/Users/pmarathay/code/Notifications-Mobile/NotificationHubSample/NotificationHubSample.Android/NotificationHubSample.Android.csproj",
+        "packagesPath": "/Users/pmarathay/.nuget/packages/",
+        "outputPath": "/Users/pmarathay/code/Notifications-Mobile/NotificationHubSample/NotificationHubSample.Android/obj/",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\bala2\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/Users/pmarathay/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "monoandroid90"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "C:\\Users\\bala2\\Documents\\Sharmi\\Notifications-Mobile\\NotificationHubSample\\NotificationHubSample\\NotificationHubSample.csproj": {
-                "projectPath": "C:\\Users\\bala2\\Documents\\Sharmi\\Notifications-Mobile\\NotificationHubSample\\NotificationHubSample\\NotificationHubSample.csproj"
+              "/Users/pmarathay/code/Notifications-Mobile/NotificationHubSample/NotificationHubSample/NotificationHubSample.csproj": {
+                "projectPath": "/Users/pmarathay/code/Notifications-Mobile/NotificationHubSample/NotificationHubSample/NotificationHubSample.csproj"
               }
             }
           }
@@ -66,28 +60,22 @@
         }
       }
     },
-    "C:\\Users\\bala2\\Documents\\Sharmi\\Notifications-Mobile\\NotificationHubSample\\NotificationHubSample\\NotificationHubSample.csproj": {
+    "/Users/pmarathay/code/Notifications-Mobile/NotificationHubSample/NotificationHubSample/NotificationHubSample.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bala2\\Documents\\Sharmi\\Notifications-Mobile\\NotificationHubSample\\NotificationHubSample\\NotificationHubSample.csproj",
+        "projectUniqueName": "/Users/pmarathay/code/Notifications-Mobile/NotificationHubSample/NotificationHubSample/NotificationHubSample.csproj",
         "projectName": "NotificationHubSample",
-        "projectPath": "C:\\Users\\bala2\\Documents\\Sharmi\\Notifications-Mobile\\NotificationHubSample\\NotificationHubSample\\NotificationHubSample.csproj",
-        "packagesPath": "C:\\Users\\bala2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bala2\\Documents\\Sharmi\\Notifications-Mobile\\NotificationHubSample\\NotificationHubSample\\obj\\",
+        "projectPath": "/Users/pmarathay/code/Notifications-Mobile/NotificationHubSample/NotificationHubSample/NotificationHubSample.csproj",
+        "packagesPath": "/Users/pmarathay/.nuget/packages/",
+        "outputPath": "/Users/pmarathay/code/Notifications-Mobile/NotificationHubSample/NotificationHubSample/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\bala2\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/Users/pmarathay/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -112,6 +100,10 @@
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.5.3.2, )"
+            },
             "Xamarin.Forms": {
               "target": "Package",
               "version": "[4.8.0.1269, )"
@@ -127,7 +119,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
         }
       }
     }

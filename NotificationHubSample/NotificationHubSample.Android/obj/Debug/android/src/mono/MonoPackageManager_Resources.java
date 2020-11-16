@@ -44,6 +44,7 @@ public class MonoPackageManager_Resources {
 		"Xamarin.Android.Support.VersionedParcelable.dll",
 		"Xamarin.Android.Support.ViewPager.dll",
 		"Xamarin.Azure.NotificationHubs.Android.dll",
+		"Xamarin.Essentials.dll",
 		"Xamarin.Firebase.Common.dll",
 		"Xamarin.Firebase.Iid.dll",
 		"Xamarin.Firebase.Iid.Interop.dll",

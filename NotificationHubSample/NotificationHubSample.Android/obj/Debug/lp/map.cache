@@ -37,6 +37,7 @@ Xamarin.Android.Support.Vector.Drawable
 Xamarin.Android.Support.VersionedParcelable
 Xamarin.Android.Support.ViewPager
 Xamarin.Azure.NotificationHubs.Android
+Xamarin.Essentials
 Xamarin.Firebase.Common
 Xamarin.Firebase.Iid
 Xamarin.Firebase.Iid.Interop

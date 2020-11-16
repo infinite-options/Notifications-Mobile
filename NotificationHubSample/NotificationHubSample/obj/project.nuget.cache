@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "kzq7sU+lb7kan/OpZ832PoZLBQ2JL/mW1zUctlZfJJL1UXsxBnxSCl/9DVf9EVb4WSBW9H1vx2R8ey7qx7+AOw==",
+  "dgSpecHash": "FVV7z/cJdJgbCdGxgqBDBHdTTEs/+YI6gHCcw5zs/DruBMHl2/dms2C09qXK8nzWqrVkM6ODgBcEgDLM8p8xvA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bala2\\Documents\\Sharmi\\Notifications-Mobile\\NotificationHubSample\\NotificationHubSample\\NotificationHubSample.csproj",
+  "projectFilePath": "/Users/pmarathay/code/Notifications-Mobile/NotificationHubSample/NotificationHubSample/NotificationHubSample.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\bala2\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\bala2\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\bala2\\.nuget\\packages\\xamarin.forms\\4.8.0.1269\\xamarin.forms.4.8.0.1269.nupkg.sha512"
+    "/Users/pmarathay/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/pmarathay/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512",
+    "/Users/pmarathay/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/pmarathay/.nuget/packages/xamarin.essentials/1.5.3.2/xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "/Users/pmarathay/.nuget/packages/xamarin.forms/4.8.0.1269/xamarin.forms.4.8.0.1269.nupkg.sha512"
   ],
   "logs": []
 }

@@ -7,6 +7,7 @@ using Firebase.Messaging;
 using System;
 using System.Linq;
 using WindowsAzure.Messaging;
+using Xamarin.Essentials;   // Added so that Preferences would work
 
 namespace NotificationHubSample.Droid
 {
@@ -14,6 +15,70 @@ namespace NotificationHubSample.Droid
     [IntentFilter(new[] { "com.google.firebase.MESSAGING_EVENT" })]
     public class FirebaseService : FirebaseMessagingService
     {
+        public override void OnNewToken(string token)
+        {
+            // TODO: save token instance locally, or log if desired
+            Console.WriteLine("New Token:" + token);
+            SendRegistrationToServer(token);
+        }
+
+        // serving fresh code
+        void SendRegistrationToServer(string token)
+        {
+            if (Preferences.Get("guid", null) != null)
+            {
+                var tag = Preferences.Get("guid", null);
+                Console.WriteLine("guid:" + tag);
+                Console.WriteLine("token:" + token);
+                return;
+            }
+            try
+            {
+                NotificationHub hub = new NotificationHub(AppConstants.NotificationHubName, AppConstants.ListenConnectionString, this);
+                var guid = Guid.NewGuid();
+                var tag = "guid_" + guid.ToString();
+                Console.WriteLine("guid:" + tag);
+                Console.WriteLine("token:" + token);
+                Preferences.Set("guid", tag);
+                string[] tags = new string[2] { "default", tag };
+
+                // register device with Azure Notification Hub using the token from FCM
+                Registration registration = hub.Register(token, tags);
+
+                // subscribe to the SubscriptionTags list with a simple template.
+                string pnsHandle = registration.PNSHandle;
+                TemplateRegistration templateReg = hub.RegisterTemplate(pnsHandle, "defaultTemplate", AppConstants.FCMTemplateBody, tags);
+            }
+            catch (Exception e)
+            {
+                Log.Error(AppConstants.DebugTag, $"Error registering device: {e.Message}");
+            }
+        }
+
+
+
+        // original working code
+        //void SendRegistrationToServer(string token)
+        //{
+        //    try
+        //    {
+        //        NotificationHub hub = new NotificationHub(AppConstants.NotificationHubName, AppConstants.ListenConnectionString, this);
+
+        //        // register device with Azure Notification Hub using the token from FCM
+        //        Registration registration = hub.Register(token, AppConstants.SubscriptionTags);
+
+        //        // subscribe to the SubscriptionTags list with a simple template.
+        //        string pnsHandle = registration.PNSHandle;
+        //        TemplateRegistration templateReg = hub.RegisterTemplate(pnsHandle, "defaultTemplate", AppConstants.FCMTemplateBody, AppConstants.SubscriptionTags);
+        //    }
+        //    catch (Exception e)
+        //    {
+        //        Log.Error(AppConstants.DebugTag, $"Error registering device: {e.Message}");
+        //    }
+        //}
+
+
+
         public override void OnMessageReceived(RemoteMessage message)
         {
             base.OnMessageReceived(message);
@@ -35,13 +100,6 @@ namespace NotificationHubSample.Droid
 
             // send the incoming message directly to the MainPage
             SendMessageToMainPage(messageBody);
-        }
-
-        public override void OnNewToken(string token)
-        {
-            // TODO: save token instance locally, or log if desired
-
-            SendRegistrationToServer(token);
         }
 
         void SendLocalNotification(string body)
@@ -73,23 +131,6 @@ namespace NotificationHubSample.Droid
             (App.Current.MainPage as MainPage)?.AddMessage(body);
         }
 
-        void SendRegistrationToServer(string token)
-        {
-            try
-            {
-                NotificationHub hub = new NotificationHub(AppConstants.NotificationHubName, AppConstants.ListenConnectionString, this);
 
-                // register device with Azure Notification Hub using the token from FCM
-                Registration registration = hub.Register(token, AppConstants.SubscriptionTags);
-
-                // subscribe to the SubscriptionTags list with a simple template.
-                string pnsHandle = registration.PNSHandle;
-                TemplateRegistration templateReg = hub.RegisterTemplate(pnsHandle, "defaultTemplate", AppConstants.FCMTemplateBody, AppConstants.SubscriptionTags);
-            }
-            catch (Exception e)
-            {
-                Log.Error(AppConstants.DebugTag, $"Error registering device: {e.Message}");
-            }
-        }
     }
 }
