@@ -79,6 +79,7 @@ def getnotificationtime(op,t,obj):
 		print('Unrecognized opcode!!!')
 	tz = timezone('America/Los_Angeles')
 	result_time= result_time.replace(tzinfo=tz)
+	result_time = result_time + datetime.timedelta(seconds=420)
 	#debug print(result_time)
 	return result_time.astimezone(timezone('UTC'))
 
