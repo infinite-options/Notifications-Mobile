@@ -64,7 +64,7 @@ def getGUID(n):
 def changedate(obj):
 	sdate = date.today() 
 	obj =obj.replace(day = sdate.day, month = sdate.month, year = sdate.year)
-	#debug print( obj)
+        print( obj)
 	return obj
 
 def getnotificationtime(op,t,obj):
@@ -78,20 +78,26 @@ def getnotificationtime(op,t,obj):
 	else:
 		print('Unrecognized opcode!!!')
 	tz = timezone('America/Los_Angeles')
-	result_time= result_time.replace(tzinfo=tz)
-	result_time = result_time + datetime.timedelta(seconds=420)
-	#debug print(result_time)
+        result_time = tz.localize(result_time)
+	#result_time= result_time.replace(tzinfo=tz)
+        print(result_time)
+        #backup = result_time
+	#result_time = result_time + datetime.timedelta(seconds=420)
+        #result_time = result_time.replace(day = backup.day, month = backup.month, year = backup.year)
+        print(result_time)
 	return result_time.astimezone(timezone('UTC'))
 
 f= open("sendnotification.log","a")
 for d in data['result']:
-	#if(d['gr_unique_id'] == '300-000181'):
+        #debug if(d['gr_unique_id'] == '300-000186'):
 	#debug print(d['start_day_and_time'])
 	#debug print(d['end_day_and_time'])
 	if(d['is_displayed_today'] == 'True'):
 		start_day_and_time_obj = datetime.datetime.strptime(d['start_day_and_time'], '%m/%d/%Y, %I:%M:%S %p')
+                print('start_time')
 		start_day_and_time_obj =changedate(start_day_and_time_obj)
 		end_day_and_time_obj = datetime.datetime.strptime(d['end_day_and_time'], '%m/%d/%Y, %I:%M:%S %p')
+                print('end_time')
 		end_day_and_time_obj = changedate(end_day_and_time_obj)
 		start_day_and_time_obj = start_day_and_time_obj.replace(second = 0)
 		end_day_and_time_obj = end_day_and_time_obj.replace(second = 0)
@@ -99,7 +105,11 @@ for d in data['result']:
 		for n in d['notifications']:
 			if(n['before_is_enable'] == 'True'):
 				before_not_time = getnotificationtime('before', n['before_time'], start_day_and_time_obj)
+                                print('before_notification_time')
+                                print(before_not_time)
 				time_diff= utc_time - before_not_time
+                                print('time_diff')
+                                print(time_diff)
 				#notify(n['before_message']+n['before_time'])
 				if(time_diff.total_seconds() < 10 and time_diff.total_seconds() > -10):
 					id = getGUID(n)
