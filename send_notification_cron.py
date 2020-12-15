@@ -6,6 +6,7 @@ import urllib
 import requests
 import datetime, pytz
 import json
+from datetime import date
 from pytz import timezone
 
 
@@ -60,6 +61,11 @@ def getGUID(n):
 			s='guid_'+guid_list[2][1:-2]
 	#debug print(s)
 	return s
+def changedate(obj):
+	sdate = date.today() 
+	obj =obj.replace(day = sdate.day, month = sdate.month, year = sdate.year)
+	#debug print( obj)
+	return obj
 
 def getnotificationtime(op,t,obj):
 	hours,mins,seconds = t.split(':')
@@ -81,66 +87,80 @@ for d in data['result']:
 	#if(d['gr_unique_id'] == '300-000181'):
 	#debug print(d['start_day_and_time'])
 	#debug print(d['end_day_and_time'])
-	start_day_and_time_obj = datetime.datetime.strptime(d['start_day_and_time'], '%m/%d/%Y, %I:%M:%S %p')
-	end_day_and_time_obj = datetime.datetime.strptime(d['end_day_and_time'], '%m/%d/%Y, %I:%M:%S %p')
-	start_day_and_time_obj = start_day_and_time_obj.replace(second = 0)
-	end_day_and_time_obj = end_day_and_time_obj.replace(second = 0)
-	#print(date_time_obj.strftime('%m/%d/%Y, %I:%M:%S %p'))
-	for n in d['notifications']:
-		if(n['before_is_enable'] == 'True'):
-			before_not_time = getnotificationtime('before', n['before_time'], start_day_and_time_obj)
-			time_diff= utc_time - before_not_time
-			#notify(n['before_message']+n['before_time'])
-			if(time_diff.total_seconds() < 10 and time_diff.total_seconds() > -10):
-				id = getGUID(n)
-				if (id != ''):
-					notify(n['before_message'],id)
-					f.write(n['before_message'])
-					f.write(id+' ')
-					f.write(str(before_not_time)+ ' ')
-					f.write('\n')
-			#debug print(n['before_time'])
-			#debug print(n['before_message'])
+	if(d['is_displayed_today'] == 'True'):
+		start_day_and_time_obj = datetime.datetime.strptime(d['start_day_and_time'], '%m/%d/%Y, %I:%M:%S %p')
+		start_day_and_time_obj =changedate(start_day_and_time_obj)
+		end_day_and_time_obj = datetime.datetime.strptime(d['end_day_and_time'], '%m/%d/%Y, %I:%M:%S %p')
+		end_day_and_time_obj = changedate(end_day_and_time_obj)
+		start_day_and_time_obj = start_day_and_time_obj.replace(second = 0)
+		end_day_and_time_obj = end_day_and_time_obj.replace(second = 0)
+		#print(date_time_obj.strftime('%m/%d/%Y, %I:%M:%S %p'))
+		for n in d['notifications']:
+			if(n['before_is_enable'] == 'True'):
+				before_not_time = getnotificationtime('before', n['before_time'], start_day_and_time_obj)
+				time_diff= utc_time - before_not_time
+				#notify(n['before_message']+n['before_time'])
+				if(time_diff.total_seconds() < 10 and time_diff.total_seconds() > -10):
+					id = getGUID(n)
+					if (id != ''):
+						notify(n['before_message'],id)
+						f.write(n['before_message'])
+						f.write(id+' ')
+						f.write(str(before_not_time)+ ' ')
+						f.write('\n')
+				#debug print(n['before_time'])
+				#debug print(n['before_message'])
 			
-			#debug print(utc_time)
-			#debug print(time_diff.total_seconds())
-			print('\n')
-		if(n['during_is_enable'] == 'True'):
-			during_not_time = getnotificationtime('during', n['during_time'], start_day_and_time_obj)
-			time_diff= utc_time - during_not_time
-			#notify(n['during_message']+n['during_time'])
-			if(time_diff.total_seconds() < 10 and time_diff.total_seconds() > -10):
-				id = getGUID(n)
-				if (id != ''):
-					notify(n['during_message'],id)
-					f.write(n['during_message'])
-					f.write(id+ ' ')
-					f.write(str(during_not_time)+ ' ')
-					f.write('\n')
-			#debug print(n['during_time'])
-			#debug print(n['during_message'])
-			#debug print(during_not_time)
-			#debug print(time_diff.total_seconds())
-			print('\n')
-		if(n['after_is_enable'] == 'True'):
-			after_not_time = getnotificationtime('after', n['after_time'], end_day_and_time_obj)
-			time_diff= utc_time - after_not_time
-			#notify(n['after_message']+n['after_time'])
-			if(time_diff.total_seconds() < 10 and time_diff.total_seconds() > -10):
-				id = getGUID(n)
-				if (id != ''):
-					notify(n['after_message'],id)
-					f.write(n['after_message'])
-					f.write(id+' ')
-					f.write(str(after_not_time)+' ')
-					f.write('\n')
-			#debug print(n['after_time'])
-			#debug print(n['after_message'])
-			#debug print(after_not_time)
-			#debug print(time_diff.total_seconds())
-			print('\n')	
+				#debug print(utc_time)
+				#debug print(time_diff.total_seconds())
+				print('\n')
+			if(n['during_is_enable'] == 'True'):
+				during_not_time = getnotificationtime('during', n['during_time'], start_day_and_time_obj)
+				time_diff= utc_time - during_not_time
+				#notify(n['during_message']+n['during_time'])
+				if(time_diff.total_seconds() < 10 and time_diff.total_seconds() > -10):
+					id = getGUID(n)
+					if (id != ''):
+						notify(n['during_message'],id)
+						f.write(n['during_message'])
+						f.write(id+ ' ')
+						f.write(str(during_not_time)+ ' ')
+						f.write('\n')
+				#debug print(n['during_time'])
+				#debug print(n['during_message'])
+				#debug print(during_not_time)
+				#debug print(time_diff.total_seconds())
+				print('\n')
+			if(n['after_is_enable'] == 'True'):
+				after_not_time = getnotificationtime('after', n['after_time'], end_day_and_time_obj)
+				time_diff= utc_time - after_not_time
+				#notify(n['after_message']+n['after_time'])
+				if(time_diff.total_seconds() < 10 and time_diff.total_seconds() > -10):
+					id = getGUID(n)
+					if (id != ''):
+						notify(n['after_message'],id)
+						f.write(n['after_message'])
+						f.write(id+' ')
+						f.write(str(after_not_time)+' ')
+						f.write('\n')
+				#debug print(n['after_time'])
+				#debug print(n['after_message'])
+				#debug print(after_not_time)
+				#debug print(time_diff.total_seconds())
+				print('\n')	
 f.close()
 		
+
+
+
+
+
+
+
+
+
+
+
 
 
 
