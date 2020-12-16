@@ -12,10 +12,10 @@ from pytz import timezone
 import mysql.connector
 
 mydb = mysql.connector.connect(
-          host='io-mysqldb8.cxjnrciilyjq.us-west-1.rds.amazonaws.com',
-          user='admin',
-          password='prashant',
-          database='manifest',
+          host='',
+          user='',
+          password='',
+          database='',
           port = 3306
                   )
 def notify(msg,tag):
