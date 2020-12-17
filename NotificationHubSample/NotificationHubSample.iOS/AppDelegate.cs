@@ -1,8 +1,9 @@
-﻿using Foundation;
+using Foundation;
 using System;
 using System.Diagnostics;
 using System.Linq;
 using UIKit;
+# Added for in-app notifications
 using UserNotifications;
 using WindowsAzure.Messaging;
 
@@ -21,6 +22,8 @@ namespace NotificationHubSample.iOS
             base.FinishedLaunching(app, options);
 
             RegisterForRemoteNotifications();
+            # Added for in-app notifications
+            UNUserNotificationCenter.Current.Delegate = new NotificationDelegate();
 
             return true;
         }
@@ -122,5 +125,14 @@ namespace NotificationHubSample.iOS
                 Debug.WriteLine($"Received request to process notification but there was no payload.");
             }
         }
+
+        # Added for in-app notifications
+        public class NotificationDelegate : UNUserNotificationCenterDelegate
+        {
+            public override void WillPresentNotification(UNUserNotificationCenter center, UNNotification notification, Action<UNNotificationPresentationOptions> completionHandler)
+            {
+                completionHandler(UNNotificationPresentationOptions.Alert);
+            }
+        }
     }
-}
+ }
