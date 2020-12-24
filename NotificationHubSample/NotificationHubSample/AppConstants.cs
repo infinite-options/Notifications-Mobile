@@ -10,7 +10,7 @@
         /// <summary>
         /// This is the name of your Azure Notification Hub, found in your Azure portal.
         /// </summary>
-        public static string NotificationHubName { get; set; } = "XamNotiPushApple";
+        public static string NotificationHubName { get; set; } = "Manifest-Notification-Hub";
 
         /// <summary>
         /// This is the "DefaultListenSharedAccessSignature" connection string, which is
@@ -19,13 +19,12 @@
         /// You should always use the ListenShared connection string. Do not use the
         /// FullShared connection string in a client application.
         /// </summary>
-        public static string ListenConnectionString { get; set; } = "Endpoint=sb://notificationhubsample-123.servicebus.windows.net/;SharedAccessKeyName=DefaultListenSharedAccessSignature;SharedAccessKey=Q+tkYc8oBBe/xrpquFsdigpqMLzY6WXgtZYO0UVnvow=";
-
+        public static string ListenConnectionString { get; set; } = "Endpoint=sb://manifest-notifications-namespace.servicebus.windows.net/;SharedAccessKeyName=DefaultListenSharedAccessSignature;SharedAccessKey=AQuiUeN4QL+TJJVwwWyPvRtQM6U/hTo2Q4YO8kJzC8E=";
         /// <summary>
         /// Tag used in log messages to easily filter the device log
         /// during development.
         /// </summary>
-        public static string DebugTag { get; set; } = "XamarinNotify";
+        public static string DebugTag { get; set; } = "ManifestMySpace";
 
         /// <summary>
         /// The tags the device will subscribe to. These could be subjects like
