@@ -64,7 +64,7 @@ namespace NotificationHubSample.Droid
             {
                 var channelName = AppConstants.NotificationChannelName;
                 var channelDescription = String.Empty;
-                var channel = new NotificationChannel(channelName, channelName, NotificationImportance.Default)
+                var channel = new NotificationChannel(channelName, channelName, NotificationImportance.Max)
                 {
                     Description = channelDescription
                 };
