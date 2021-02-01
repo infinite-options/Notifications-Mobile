@@ -6,23 +6,27 @@ import urllib
 import requests
 import datetime, pytz
 import json
+import re
 from datetime import date
 from pytz import timezone
 
 import mysql.connector
 
 mydb = mysql.connector.connect(
-          host='',
-          user='',
-          password='',
-          database='',
+          host='io-mysqldb8.cxjnrciilyjq.us-west-1.rds.amazonaws.com',
+          user='admin',
+          password='prashant',
+          database='manifest',
           port = 3306
                   )
 def notify(msg,tag):
 	#print(msg,tag)
 	#return
 	isDebug = True
-	hub = AzureNotificationHub("Endpoint=sb://serving-fresh-notification-namespace.servicebus.windows.net/;SharedAccessKeyName=DefaultFullSharedAccessSignature;SharedAccessKey=Yy/PhzWba6vmrM8geyHmKTVQPocwrDVcVlqAiokvHe4=", "Serving-Fresh-Notification-Hub", isDebug)
+	#hub = AzureNotificationHub("Endpoint=sb://serving-fresh-notification-namespace.servicebus.windows.net/;SharedAccessKeyName=DefaultFullSharedAccessSignature;SharedAccessKey=Yy/PhzWba6vmrM8geyHmKTVQPocwrDVcVlqAiokvHe4=", "Serving-Fresh-Notification-Hub", isDebug)
+        hub = AzureNotificationHub("Endpoint=sb://manifest-notifications-namespace.servicebus.windows.net/;SharedAccessKeyName=DefaultFullSharedAccessSignature;SharedAccessKey=UWW7o7LFe8Oz6FZUQQ/gaNgqSfdN4Ckp6FCVCm3xuVg=", "Manifest-Notification-Hub", isDebug)
+
+
 
 	#wns_payload = "{\"aps\":{\"alert\":\"Notification Hub test notification\"}}"
 	wns_payload = {
@@ -65,14 +69,21 @@ def getGUID(n):
 	if 'guid' in n:
 		guid = str(n['guid'])
 		guid_list =guid.split(' ')
+                l =[]
+                print("guid_list_len")
 		if(len(guid_list)> 1):
-			s='guid_'+guid_list[2][1:-2]
-	#debug print(s)
-	return s
+                    for i in range(len(guid_list)):
+                        #if(guid_list[i]=="guid"):
+                        if(re.search('guid', guid_list[i])):
+                            s='guid_'+guid_list[i+1][1:-2]
+                            print(s)
+                            l.append(s)
+                            s=''
+                            print(l)
+	return l
 def changedate(obj):
-	sdate = date.today() 
+	sdate = date.today()
 	obj =obj.replace(day = sdate.day, month = sdate.month, year = sdate.year)
-        print( obj)
 	return obj
 
 def getnotificationtime(op,t,obj):
@@ -95,9 +106,10 @@ def getnotificationtime(op,t,obj):
         print(result_time)
 	return result_time.astimezone(timezone('UTC'))
 
-f= open("sendnotification.log","a")
+f= open("/home/ec2-user/Notifications-Mobile/sendnotification.log","a")
+#f.write("Inside manifest")
 for d in data['result']:
-    #debug if(d['gr_unique_id'] == '300-000186'):
+    if('notifications' in d):
 	#debug print(d['start_day_and_time'])
 	#debug print(d['end_day_and_time'])
 	if(d['is_displayed_today'] == 'True' and d['is_complete'] == 'False'):
@@ -114,13 +126,15 @@ for d in data['result']:
 			if(n['before_is_enable'] == 'True'):
 				before_not_time = getnotificationtime('before', n['before_time'], start_day_and_time_obj)
                                 print('before_notification_time')
+                                before_not_time = changedate(before_not_time)
                                 print(before_not_time)
 				time_diff= utc_time - before_not_time
                                 print('time_diff')
                                 print(time_diff)
 				#notify(n['before_message']+n['before_time'])
 				if(time_diff.total_seconds() < 10 and time_diff.total_seconds() > -10):
-					id = getGUID(n)
+                                    for id in getGUID(n):
+				       #id = getGUID(n)
 					if (id != ''):
 						notify(n['before_message'],id)
                                                 mycursor = mydb.cursor()
@@ -139,10 +153,12 @@ for d in data['result']:
 				print('\n')
 			if(n['during_is_enable'] == 'True'):
 				during_not_time = getnotificationtime('during', n['during_time'], start_day_and_time_obj)
+                                during_not_time = changedate(during_not_time)
 				time_diff= utc_time - during_not_time
 				#notify(n['during_message']+n['during_time'])
 				if(time_diff.total_seconds() < 10 and time_diff.total_seconds() > -10):
-					id = getGUID(n)
+                                    for id in getGUID(n):
+				       #id = getGUID(n)
 					if (id != ''):
 						notify(n['during_message'],id)
                                                 mycursor = mydb.cursor()
@@ -153,17 +169,19 @@ for d in data['result']:
 						f.write(id+ ' ')
 						f.write(str(during_not_time)+ ' ')
 						f.write('\n')
-				#debug print(n['during_time'])
-				#debug print(n['during_message'])
-				#debug print(during_not_time)
-				#debug print(time_diff.total_seconds())
+				print(n['during_time'])
+				print(n['during_message'])
+				print(during_not_time)
+				print(time_diff.total_seconds())
 				print('\n')
 			if(n['after_is_enable'] == 'True'):
 				after_not_time = getnotificationtime('after', n['after_time'], end_day_and_time_obj)
+                                after_not_time = changedate(after_not_time)
 				time_diff= utc_time - after_not_time
 				#notify(n['after_message']+n['after_time'])
 				if(time_diff.total_seconds() < 10 and time_diff.total_seconds() > -10):
-					id = getGUID(n)
+                                    for id in getGUID(n):
+				       #id = getGUID(n)
 					if (id != ''):
 						notify(n['after_message'],id)
                                                 mycursor = mydb.cursor()
@@ -174,10 +192,10 @@ for d in data['result']:
 						f.write(id+' ')
 						f.write(str(after_not_time)+' ')
 						f.write('\n')
-				#debug print(n['after_time'])
-				#debug print(n['after_message'])
-				#debug print(after_not_time)
-				#debug print(time_diff.total_seconds())
+				print(n['after_time'])
+				print(n['after_message'])
+			        print(after_not_time)
+				print(time_diff.total_seconds())
 				print('\n')	
 f.close()
 		
