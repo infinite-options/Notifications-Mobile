@@ -7,17 +7,18 @@ import requests
 import datetime, pytz
 import json
 import re
+import os
 from datetime import date
 from pytz import timezone
 
 import mysql.connector
 
 mydb = mysql.connector.connect(
-          host='',
-          user='',
-          password='',
-          database='',
-          port = 
+          host='io-mysqldb8.cxjnrciilyjq.us-west-1.rds.amazonaws.com',
+          user='admin',
+          password='prashant',
+          database='manifest',
+          port = 3306
                   )
 def notify(msg,tag):
 	#print(msg,tag)
@@ -52,6 +53,8 @@ def notify(msg,tag):
 	hub.send_google_notification(0, wns_payload,tag)
 
 utc_time =datetime.datetime.now(pytz.utc)
+#utc_time = utc_time + datetime.timedelta(seconds=170)
+
 #utc_timezone = pytz.timezone('UTC')
 #utc_time = utc_timezone.localize(utc_time)
 #utc_time = utc_time.astimezone(utc_timezone)
@@ -106,12 +109,20 @@ def getnotificationtime(op,t,obj):
         print(result_time)
 	return result_time.astimezone(timezone('UTC'))
 
-f= open("/home/ec2-user/Notifications-Mobile/sendnotification.log","a")
+#main
+logfilename = str(datetime.datetime.now(pytz.UTC).date())+'.log'
+logfilepath = '/home/sharmilasabarathinam/logs/notification/'+logfilename
+if os.path.exists(logfilepath):
+    fileop = "a"
+else:
+    fileop = "w" 
+f= open(logfilepath,fileop)
 #f.write("Inside manifest")
 for d in data['result']:
+  #if(d['gr_unique_id']=='300-000458'):
     if('notifications' in d):
-	#debug print(d['start_day_and_time'])
-	#debug print(d['end_day_and_time'])
+        print(d['start_day_and_time'])
+	print(d['end_day_and_time'])
 	if(d['is_displayed_today'] == 'True' and d['is_complete'] == 'False'):
 		start_day_and_time_obj = datetime.datetime.strptime(d['start_day_and_time'], '%m/%d/%Y, %I:%M:%S %p')
                 print('start_time')
@@ -128,6 +139,8 @@ for d in data['result']:
                                 print('before_notification_time')
                                 before_not_time = changedate(before_not_time)
                                 print(before_not_time)
+                                print("UTC Time")
+                                print(utc_time)
 				time_diff= utc_time - before_not_time
                                 print('time_diff')
                                 print(time_diff)
@@ -141,15 +154,15 @@ for d in data['result']:
                                                 sql = "UPDATE notifications SET before_is_set = 'True' WHERE notification_id = '"+str(n['notification_id'])+"'"
                                                 mycursor.execute(sql)
                                                 mydb.commit()
-						f.write(n['before_message'])
+						f.write(n['before_message']+ ' ')
 						f.write(id+' ')
 						f.write(str(before_not_time)+ ' ')
 						f.write('\n')
-				#debug print(n['before_time'])
-				#debug print(n['before_message'])
+				print(n['before_time'])
+				print(n['before_message'])
 			
-				#debug print(utc_time)
-				#debug print(time_diff.total_seconds())
+				print(utc_time)
+				print(time_diff.total_seconds())
 				print('\n')
 			if(n['during_is_enable'] == 'True'):
 				during_not_time = getnotificationtime('during', n['during_time'], start_day_and_time_obj)
@@ -165,7 +178,7 @@ for d in data['result']:
                                                 sql = "UPDATE notifications SET during_is_set = 'True' WHERE notification_id = '"+str(n['notification_id'])+"'"
                                                 mycursor.execute(sql)
                                                 mydb.commit()
-						f.write(n['during_message'])
+						f.write(n['during_message']+ ' ')
 						f.write(id+ ' ')
 						f.write(str(during_not_time)+ ' ')
 						f.write('\n')
@@ -188,7 +201,7 @@ for d in data['result']:
                                                 sql = "UPDATE notifications SET after_is_set = 'True' WHERE notification_id = '"+str(n['notification_id'])+"'"
                                                 mycursor.execute(sql)
                                                 mydb.commit()
-						f.write(n['after_message'])
+						f.write(n['after_message']+ ' ')
 						f.write(id+' ')
 						f.write(str(after_not_time)+' ')
 						f.write('\n')
@@ -199,6 +212,51 @@ for d in data['result']:
 				print('\n')	
 f.close()
 		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
